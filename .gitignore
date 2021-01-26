@@ -1,0 +1,10 @@
+.idea
+**/*.ko
+**/*.o
+**/*.mod.c
+**/modules.order
+**/modules.symvers
+**/Module.symvers
+**/*.mod
+**/*.cmd
+**/*.swp
