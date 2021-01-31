@@ -18,3 +18,10 @@ Display logs with `tail -f /var/log/syslog`
  - system calls are prefixed with `sys_´
  - export symbols with `EXPORT_SYMBOL(name)` or `EXPORT_SYMBOL_GPL(name)`
  - add a metadata to the module, i.e. `MODULE_LICENSE("GPL")`, `MODULE_AUTHOR("simon")`, `MODULE_VERSION()`, `MODULE_DESCRIPTION()` and `MODULE_ALIAS()`
+
+#### Drivers
+
+ - register a new device `int register_chardev_region(dev_t first, unsigned int count, char *name);`
+   - dynamic allocation `int alloc_chrdev_region(dev_t *dev, unsinged int firstminor, unsigned int count, char *name)`
+   - unregister `void unregister_chrdev_region(dev_t first, unsinged int count)`
+   - statically assigned devices numers in `Documentation/admin-guide/devices.txt`

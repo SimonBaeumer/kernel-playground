@@ -2,6 +2,7 @@
 #include <linux/module.h>
 #include <linux/sched.h>
 #include <linux/moduleparam.h>
+
 MODULE_LICENSE("Dual BSD/GPL");
 
 static char *whom = "world";
