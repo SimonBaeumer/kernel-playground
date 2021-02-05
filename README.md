@@ -18,6 +18,7 @@ Display logs with `tail -f /var/log/syslog`
  - system calls are prefixed with `sys_´
  - export symbols with `EXPORT_SYMBOL(name)` or `EXPORT_SYMBOL_GPL(name)`
  - add a metadata to the module, i.e. `MODULE_LICENSE("GPL")`, `MODULE_AUTHOR("simon")`, `MODULE_VERSION()`, `MODULE_DESCRIPTION()` and `MODULE_ALIAS()`
+ - to allocate RAM use `kmalloc` and `kfree` from `linux/slab.h` 
 
 #### Drivers
 
